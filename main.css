@@ -21,9 +21,10 @@ body {
 
 .ja {
   margin-top: 5rem;
-  background: linear-gradient(90deg, rgba(245,120,194,1) 0%, rgba(236,198,157,1) 18%, rgba(246,246,160,1) 37%, rgba(196,242,156,1) 58%, rgba(166,211,245,1) 80%, rgba(222,143,244,1) 100%);
 }
 
-.about {
-  background: rgb(245,120,194);
+.container {
+  margin: 0;
+  padding: 1rem;
+  background: linear-gradient(90deg, rgba(245,120,194,1) 0%, rgba(236,198,157,1) 18%, rgba(246,246,160,1) 37%, rgba(196,242,156,1) 58%, rgba(166,211,245,1) 80%, rgba(222,143,244,1) 100%);
 }
