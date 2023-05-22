@@ -5,3 +5,15 @@
 .date {
   min-width: 18rem;
 }
+
+img {
+  max-width: 100%;
+}
+
+.vvv {
+  text-align: center;
+}
+
+body {
+  margin-block: 20px;
+}
