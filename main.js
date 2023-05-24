@@ -7,6 +7,7 @@ function handleSubmit(event) {
 
   var msg = $('#msg').val();
   var email = $('#email').val();
-  
+
   console.log(msg);
 }
+
