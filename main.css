@@ -76,14 +76,12 @@ p {
 }
 
 .education {
-    border-radius: 1rem;
     background-color: rgba(208,200,188,255);
     box-shadow: 5px 10px 18px rgba(77,65,59,1);
     padding: 1rem;
 }
 
 .zaujmy {
-    border-radius: 1rem;
     background-color: rgba(208,200,188,255);
     box-shadow: 5px 10px 18px rgba(77,65,59,1);
     padding: 1rem;
@@ -129,8 +127,20 @@ p {
     margin-bottom: 3rem;
 }
 
+.dalsiep {
+    text-align: center;
+}
+
 .kontakt {
     margin-bottom: 3rem;
+}
+
+form {
+    margin-inline: 5rem;
+}
+
+.hadva {
+    text-align: center;
 }
 
 footer {
