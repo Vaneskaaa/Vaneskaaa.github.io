@@ -13,8 +13,8 @@ async function handleSubmit(event) {
   let data = {
     systemEmail: "valentinkavanveen@gmail.com",
     contactEmail: $('#email').val(),
-    message: ""
-    // message: $('#msg').val()
+    //message: ""
+    message: $('#msg').val()
   };
 
   console.log("Data:", data);
