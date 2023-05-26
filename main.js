@@ -1,21 +1,52 @@
+// $(document).ready(function () {
+//   $("form").submit(handleSubmit);
+// });
+
+// async function handleSubmit(event) {
+//   event.preventDefault();
+//   console.log("input Email:", $('email').val());
+//   console.log("input Sprava:", $('msg').val());
+
+//   var msg = $('#msg').val();
+//   var email = $('#email').val();
+
+//   let data = {
+//     systemEmail: "valentinkavanveen@gmail.com",
+//     contactEmail: $('#email').val(),
+//     //message: ""
+//     message: $('#msg').val()
+//   };
+
+
 $(document).ready(function () {
   $("form").submit(handleSubmit);
+  generateRandomNumber();
 });
+
+function generateRandomNumber() {
+  var randomNumber = Math.floor(Math.random() * 1000) + 1;
+  $('#randomNumber').text(randomNumber);
+}
 
 async function handleSubmit(event) {
   event.preventDefault();
   console.log("input Email:", $('email').val());
   console.log("input Sprava:", $('msg').val());
+  var antiSpamInput = $('#antiSpam').val();
+  var randomNumber = $('#randomNumber').text();
 
-  var msg = $('#msg').val();
-  var email = $('#email').val();
+  if (antiSpamInput !== randomNumber.toString()) {
+    alert("Anti-Spam verification failed. Please try again.");
+    return;
+  }
 
   let data = {
     systemEmail: "valentinkavanveen@gmail.com",
     contactEmail: $('#email').val(),
-    //message: ""
-    message: $('#msg').val()
+    message: $('#msg').val(),
+    // message: ""
   };
+
 
   console.log("Data:", data);
 
@@ -46,3 +77,4 @@ async function handleSubmit(event) {
     alert("Email bol odoslaný")
     form.reset()
   }}
+  
