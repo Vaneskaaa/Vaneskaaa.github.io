@@ -43,8 +43,8 @@ async function handleSubmit(event) {
   let data = {
     systemEmail: "valentinkavanveen@gmail.com",
     contactEmail: $('#email').val(),
-    message: $('#msg').val(),
-    // message: ""
+    // message: $('#msg').val(),
+    message: ""
   };
 
 
@@ -75,6 +75,6 @@ async function handleSubmit(event) {
 
   } else if(to==="Email bol odoslaný"){
     alert("Email bol odoslaný")
-    form.reset()
+    document.reset()
   }}
   
